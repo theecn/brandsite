@@ -8,22 +8,27 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: () => import('@/views/home/home.vue'),
+      components: () => import('@/views/index/index'),
+    },
+    {
+      path: '/index',
+      name: 'index',
+      components: () => import('@/views/index/index'),
     },
     {
       path: '/products',
       name: 'products',
-      component: () => import('@/views/products/products'),
+      components: () => import('@/views/products/products'),
     },
     {
       path: '/content',
       name: 'content',
-      component: () => import('@/views/content/content'),
+      components: () => import('@/views/content/content'),
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('@/views/about/about'),
+      components: () => import('@/views/about/about'),
     },
   ],
 });
